@@ -6,8 +6,11 @@
 # 依赖
 
 Java版本：17
+
 MyBatis Plus：3.5.7
+
 Lombok：1.18.34
+
 hutool：5.8.31
 
 # 介绍
