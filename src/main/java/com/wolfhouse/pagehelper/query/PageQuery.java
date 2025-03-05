@@ -15,10 +15,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class PageQuery {
-    private int pageNo = 1;
-    private int pageSize = 5;
-    private String orderBy;
-    private boolean isAsc = true;
+    protected int pageNo = 1;
+    protected int pageSize = 5;
+    protected String orderBy;
+    protected boolean isAsc = true;
 
     public <VO> Page<VO> toPage(OrderItem... orderItems) {
         Page<VO> page = Page.of(pageNo, pageSize);

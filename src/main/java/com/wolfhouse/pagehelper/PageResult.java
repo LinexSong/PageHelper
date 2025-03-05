@@ -17,9 +17,9 @@ import java.util.function.Function;
 @Data
 @Builder
 public class PageResult<T> {
-    private Long total;
-    private Long pages;
-    private List<T> list;
+    protected Long total;
+    protected Long pages;
+    protected List<T> list;
 
     public static <VO, PO> PageResult<VO> of(Page<PO> p, Class<VO> clazz) {
         PageResult<VO> pr = getBases(p);
